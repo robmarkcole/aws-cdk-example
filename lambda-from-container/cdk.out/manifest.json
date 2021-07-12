@@ -1,0 +1,110 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LambdaContainerFunctionStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/us-east-1",
+      "properties": {
+        "templateFile": "LambdaContainerFunctionStack.template.json"
+      },
+      "metadata": {
+        "/LambdaContainerFunctionStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "repositoryName": "aws-cdk/assets",
+              "imageTag": "67798f5c152edf2b048b6a43f0a3b6ee3f84d8f4387287df4bfccdfbb49b705c",
+              "id": "67798f5c152edf2b048b6a43f0a3b6ee3f84d8f4387287df4bfccdfbb49b705c",
+              "packaging": "container-image",
+              "path": "asset.67798f5c152edf2b048b6a43f0a3b6ee3f84d8f4387287df4bfccdfbb49b705c",
+              "sourceHash": "67798f5c152edf2b048b6a43f0a3b6ee3f84d8f4387287df4bfccdfbb49b705c"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/construct-compat.js:405:62)",
+              "LegacyStackSynthesizer.doAddDockerImageAsset (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:150:29)",
+              "LegacyStackSynthesizer.addDockerImageAsset (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:105:25)",
+              "Stack.addDockerImageAsset (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/stack.js:419:33)",
+              "LegacyStackSynthesizer.addDockerImageAsset (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:109:31)",
+              "new DockerImageAsset (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/aws-ecr-assets/lib/image-asset.js:96:44)",
+              "AssetImageCode.bind (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/aws-lambda/lib/code.js:455:23)",
+              "new Function (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/aws-lambda/lib/function.js:97:33)",
+              "/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8582:24)",
+              "Kernel._create (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8154:34)",
+              "Kernel.create (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9479:36)",
+              "KernelHost.run (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/LambdaContainerFunctionStack/lambdaContainerFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaContainerFunctionServiceRole5E36DB3C",
+            "trace": [
+              "new Role (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Function (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/aws-lambda/lib/function.js:79:35)",
+              "/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8582:24)",
+              "Kernel._create (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8154:34)",
+              "Kernel.create (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9479:36)",
+              "KernelHost.run (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/LambdaContainerFunctionStack/lambdaContainerFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaContainerFunction5815FD88",
+            "trace": [
+              "new Function (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/aws-lambda/lib/function.js:135:26)",
+              "/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8582:24)",
+              "Kernel._create (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8154:34)",
+              "Kernel.create (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9479:36)",
+              "KernelHost.run (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/LambdaContainerFunctionStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:9",
+              "visit (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/private/synthesis.js:184:9)",
+              "visit (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "injectMetadataResources (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/private/synthesis.js:117:5)",
+              "Object.synthesize (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/jsii-kernel-dr9CVv/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:7970:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8582:24)",
+              "/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:7970:107",
+              "Kernel._ensureSync (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:8563:28)",
+              "Kernel.invoke (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:7970:34)",
+              "KernelHost.processRequest (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9479:36)",
+              "KernelHost.run (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/private/var/folders/6k/x_4lmbbn1wz1z5fw2kr_vt3h0000gn/T/tmpizhxgnrz/lib/program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
